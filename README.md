@@ -32,4 +32,56 @@ A Java implementation of an **A* search algorithm** to solve the N-by-N sliding 
 
 - Input file should contain the board dimension `N` followed by the `N-by-N` tile configuration.
 - Blank space is represented by `0`.
+Example for 3x3 puzzle:
+
+3
+8 1 3
+4 0 2
+7 6 5
+
+
+---
+
+## Usage
+
+1. **Compile the code**:
+
+```bash
+javac Board.java Solver.java
+Run the solver:
+
+java Solver puzzle01.txt
+Output includes:
+
+Whether the puzzle is solvable
+
+Minimum number of moves
+
+Sequence of boards from initial state to goal
+
+Example output:
+
+Minimum number of moves = 4
+ 1  2  3 
+ 4  5  6 
+ 7  0  8 
+
+ 1  2  3 
+ 4  0  6 
+ 7  5  8 
+
+ 1  0  3 
+ 4  2  6 
+ 7  5  8 
+
+ 0  1  3 
+ 4  2  6 
+ 7  5  8 
+
+ 1  2  3 
+ 4  5  6 
+ 7  8  0 
+If unsolvable:
+
+No solution possible
 
